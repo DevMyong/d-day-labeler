@@ -1,0 +1,8 @@
+name: "d-day-labeler"
+description: "Automatically decrements 'D-n' style labels on pull requests every midnight (KST) using the built-in GITHUB_TOKEN."
+branding:
+  icon: clock
+  color: blue
+runs:
+  using: "docker"
+  image: "Dockerfile"
