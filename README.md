@@ -1,6 +1,6 @@
 # d-day-labeler
 
-**d-day-labeler** is a GitHub Action that automatically decrements 'D-n' style labels on pull requests every night at midnight (KST). It helps teams manage deadlines or remaining days easily by updating the labels.
+**d-day-labeler** is a GitHub Action that automatically decrements 'D-n' style labels on pull requests every night at midnight. It helps teams manage deadlines or remaining days easily by updating the labels.
 
 ## Features
 
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Update D-n Labels
-        uses: devmyong/d-day-labeler@latest
+        uses: devmyong/d-day-labeler@v1.0.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 ```
